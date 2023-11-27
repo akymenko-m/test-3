@@ -1,0 +1,355 @@
+@media screen and (max-width: 2000px) {
+    .mobile-prime__content {
+        left: 23%;
+    }
+}
+
+@media screen and (max-width: 1920px) {
+    .mobile-prime__content {
+        left: 17.5%;
+    }
+
+    /* bonus page & mobile page */
+    .main-mobile~.button-up,
+    .main-bonus~.button-up {
+        right: 1%;
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .aside__title-wrap {
+        padding: 10px;
+    }
+
+    .aside__mobile-title {
+        max-width: 140px;
+    }
+
+    .facts__item span:first-child {
+        min-width: 200px;
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+    .mobile-prime__content {
+        left: 7%;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .header__logo {
+        margin-right: 110px;
+    }
+
+    .aside__button-bonus {
+        margin-left: 5px;
+    }
+
+    .aside__mobile-bg img {
+        right: 5px;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .header__logo {
+        margin-right: 80px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .header__logo {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .header__logo {
+        margin-right: 0;
+        flex-grow: 1;
+    }
+
+    .header__menu {
+        display: none;
+    }
+
+    .header__language {
+        margin-right: 20px;
+    }
+
+    .header__mobile-menu {
+        display: block;
+    }
+
+    .aside__left-block {
+        display: none;
+    }
+
+    .main-bonus .main-content,
+    .main-mobile .main-content {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mobile-prime__content {
+        left: 1%;
+    }
+}
+
+@media screen and (max-width: 1287px) {
+    .aside__right-block {
+        display: none;
+    }
+
+    /* button-up */
+    .button-up {
+        right: 1%;
+        border: 2px solid var(--accent-color);
+        background-color: var(--accent-color);
+    }
+
+    /* bonus page */
+    .main-bonus .main-content {
+        padding: 0 20px;
+    }
+}
+
+@media screen and (max-width: 1246px) {
+
+    .mobile-prime__background img {
+        object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .prime__background {
+        height: 450px;
+    }
+
+    .prime__background img {
+        object-fit: cover;
+        object-position: 90%;
+        height: 100%;
+    }
+
+    .prime__image {
+        height: 100%;
+    }
+
+    .prime__image img {
+        height: 100%;
+    }
+
+    .facts__item span:first-child {
+        min-width: 150px;
+    }
+
+    /* grid-container */
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 20px 20px;
+        grid-template-areas:
+            "facts"
+            "benefits"
+            "welcome";
+    }
+
+    /* mobile-app__content */
+    .app__list {
+        right: 20px;
+    }
+
+    .mobile-prime__content {
+        left: 5%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    /* bonus-welcome__image */
+    .bonus-welcome__item .bonus-welcome__title {
+        margin-bottom: 10px;
+    }
+
+    .bonus-welcome__item img {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+
+    /* bonus-welcome__image */
+    .bonus-welcome__item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bonus-welcome__info {
+        gap: 10px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 20px;
+    }
+
+    .header__auth {
+        display: none;
+    }
+
+    .mob-menu__auth {
+        display: flex;
+    }
+
+    .header__language {
+        display: none;
+    }
+
+    .rating__item {
+        width: 100%
+    }
+
+    /* mobile-auth */
+    .mobile-auth {
+        display: block;
+    }
+
+    /* button-up */
+    .button-up {
+        bottom: 100px;
+    }
+
+    /* mobile-app__content */
+    .mobile-app__image {
+        display: none;
+    }
+
+    .mobile-app__content {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .mobile-app__logo {
+        position: relative;
+        left: 0;
+        transform: translate(0, -50%);
+    }
+
+    .app__list {
+        right: 5px;
+    }
+
+    .app__list li {
+        min-width: 190px;
+    }
+
+    .app__list a {
+        padding: 10px;
+        gap: 4px;
+    }
+
+    .mobile-prime__app-list a {
+        padding: 8px;
+        min-width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .prime__menu {
+        padding: 6px 10px;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer__menu>ul {
+        gap: 50px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .mobile-prime__title {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .mobile-prime__content {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footer__menu>ul {
+        flex-wrap: wrap;
+        row-gap: 16px;
+    }
+
+    /* bonus-welcome__image */
+    .bonus-welcome__item {
+        padding: 15px;
+    }
+
+    .bonus-welcome__button-block {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .prime__menu a {
+        padding: 10px;
+    }
+
+    .mobile-auth__button-register {
+        padding: 12px 13px;
+        min-width: 150px;
+    }
+
+    .bonus-prime__button {
+        padding: 11px 40px;
+        min-width: 240px;
+    }
+
+    /* mobile-prime */
+    .mobile-prime {
+        min-height: 540px;
+    }
+
+    .mobile-prime__image img {
+        height: auto;
+        object-fit: initial;
+    }
+
+    .mobile-prime__title {
+        margin-bottom: 15px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .mobile-prime__text {
+        margin-bottom: 20px;
+    }
+
+    .mobile-prime__app-list {
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .mobile-prime__features-list {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    /* bonus-welcome__image */
+    .bonus-welcome__item img {
+        max-width: 230px;
+    }
+}

@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <title>Casino</title>
+
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="" />
+    <meta property="og:locale" content="" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+
+    <script defer src="./index.js"></script>
+</head>
+
+<body>
+    <header class="cover header">
+        <a href="./index.html" class="logo header__logo">
+            <img src="./images/logo.png" alt="logo" title="">
+        </a>
+        <nav class="header__menu">
+            <ul>
+                <li><a href="#">sports</a></li>
+                <li><a href="#">live</a></li>
+                <li><a href="#">jackpot</a></li>
+                <li><a href="#">casino</a></li>
+                <li><a href="./bonus.html">bonuses</a></li>
+                <li><a href="#">esports</a></li>
+                <li><a href="./mobile.html">more</a></li>
+            </ul>
+        </nav>
+
+        <ul class="header__auth">
+            <li class="header__auth-item">
+                <a href="#" class="button button-login header__button header__button-login">log in</a>
+            </li>
+            <li class="header__auth-item">
+                <a href="#" class="button button-register header__button header__button-register">registration</a>
+            </li>
+        </ul>
+
+        <div class="header__time"></div>
+
+        <div class="header__language">
+            <img src="./images/lang-italy.png" alt="" title="">
+            <span>IT</span>
+        </div>
+
+        <button type="button" class="header__mobile-menu" data-menu-open>
+            <img src="./images/menu-bar.png" alt="" title="">
+        </button>
+
+        <div class="mob-menu is-hidden" data-menu>
+            <button type="button" class="header__menu-close" data-menu-close>
+                <img src="./images/close-icon.png" alt="" title="">
+            </button>
+
+            <nav class="header__menu mob-menu__nav">
+                <ul>
+                    <li><a href="#">sports</a></li>
+                    <li><a href="#">live</a></li>
+                    <li><a href="#">jackpot</a></li>
+                    <li><a href="#">casino</a></li>
+                    <li><a href="./bonus.html">bonuses</a></li>
+                    <li><a href="#">esports</a></li>
+                    <li><a href="./mobile.html">more</a></li>
+                </ul>
+            </nav>
+
+            <ul class="header__auth mob-menu__auth">
+                <li class="header__auth-item">
+                    <a href="#" class="button button-login header__button header__button-login">log in</a>
+                </li>
+                <li class="header__auth-item">
+                    <a href="#" class="button button-register header__button header__button-register">registration</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main">
+        <aside class="aside aside__left-block">
+            <div class="aside__nav-menu">
+                <h3 class="aside__nav-head js-button-accordion">
+                    <img src="./images/aside/online-game-icon.png" alt="" title="">
+                    <span>TOP Championships</span>
+                </h3>
+                <div class="aside__nav-content">
+                    <ul class="aside__nav-list">
+                        <li><a href="#" class="aside__nav-title">Review of 22Bet</a></li>
+                        <li><a href="#" class="aside__nav-title">Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aside__nav-menu">
+                <h3 class="aside__nav-head js-button-accordion">
+                    <img src="./images/aside/games-icon.png" alt="" title="">
+                    <span>Top matches</span>
+                </h3>
+                <div class="aside__nav-content">
+                    <ul class="aside__nav-list">
+                        <li><a href="#" class="aside__nav-title">Review of 22Bet</a></li>
+                        <li><a href="#" class="aside__nav-title">Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="aside__game-menu">
+                <div class="aside__game-header">
+                    <a href="#" class="button button-bonus aside__button-events">
+                        <span class="aside__play-button">
+                            <img src="./images/aside/play-icon-red.png" alt="" title="">
+                        </span>
+                        Live events: <span>143</span>
+                        <img src="./images/aside/play-icon-white.png" alt="" title="">
+                    </a>
+                </div>
+                <ul>
+                    <li><a href="#">
+                            <span><img src="./images/aside/football-icon.png" alt="" title=""></span>
+                            Football <span>(44)</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span><img src="./images/aside/tennis-icon.png" alt="" title=""></span>
+                            Tennis <span>(47)</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span><img src="./images/aside/basketball-icon.png" alt="" title=""></span>
+                            Basketball <span>(26)</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span><img src="./images/aside/icehockey-icon.png" alt="" title=""></span>
+                            Ice Hockey <span>(18)</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span><img src="./images/aside/volleyball-icon.png" alt="" title=""></span>
+                            Volleyball <span>(15)</span>
+                        </a></li>
+                </ul>
+            </div>
+
+            <div class="aside__nav-menu">
+                <h3 class="aside__nav-head js-button-accordion">
+                    <span>Lorem ipsum belet dolor sit ameiyt</span>
+                </h3>
+                <div class="aside__nav-content">
+                    <ul class="aside__nav-list">
+                        <li><a href="#" class="aside__nav-title">Review of 22Bet</a></li>
+                        <li><a href="#" class="aside__nav-title">Registration</a></li>
+                        <li><a href="#" class="aside__nav-title">22Bet Betting Expert Reviews</a></li>
+                        <li><a href="#" class="aside__nav-title">Layouts and navigation</a></li>
+                        <li><a href="#" class="aside__nav-title">Sports betting</a></li>
+                        <li><a href="#" class="aside__nav-title">Sports offers</a></li>
+                        <li><a href="#" class="aside__nav-title">Live betting</a></li>
+                        <li><a href="#" class="aside__nav-title">Cash out</a></li>
+                        <li><a href="#" class="aside__nav-title">Live stream</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <div class="main-content">
+            <section class="content prime__menu">
+                <ul>
+                    <li><a href="#">virtual srorts</a></li>
+                    <li><a href="#">statistics</a></li>
+                    <li><a href="#">results</a></li>
+                </ul>
+
+                <div class="prime__mob-app">
+                    <img src="./images/iPhone-image.png" alt="" title="">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="./images/apple-icon.png" alt="" title="">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./images/android-icon.png" alt="" title="">
+                            </a>
+                        </li>
+                    </ul>
+                    <span>APP</span>
+                </div>
+            </section>
+
+            <section class="cover prime">
+                <div class="background prime__background">
+                    <img src="./images/main-prime-bg.png" alt="background" title="">
+                </div>
+
+                <div class="image prime__image">
+                    <img src="./images/main-prime-bg-splash.png" alt="background" title="">
+                </div>
+
+                <div class="prime__wrap prime__content">
+                    <div class="prime__rating" itemscope itemtype="https://schema.org/Game">
+                        <meta itemprop="name" content="https://yourwebsitename.com/" />
+                        <p class="prime__rating-scope" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            Overall Rating <span itemprop="ratingValue">91</span><span>/</span><span
+                                itemprop="bestRating">100</span>
+                            <meta itemprop="reviewCount" content="100" />
+                        </p>
+                    </div>
+
+                    <h1 class="title prime__title">20Bet Brasil: Casa de Aposta e Cassino</h1>
+                    <p>A 20Bet apostas online é a novidade mais relevante no mercado de apostas do Brasil.</p>
+
+                    <a href="#" class="button button-bonus prime__button">Obter um Bônus</a>
+                </div>
+            </section>
+
+            <section class="content welcome__content">
+                <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri, trasformando il
+                    vostro hobby
+                    preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e sportsbook,
+                    consentendo a
+                    chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.</p>
+                <h2 class="subtitle welcome__subtitle">A 20Bet é legalizada no Brasil?</h2>
+                <p>Si possono effettuare scommesse in pochi clic e bastano appena 24 ore per ricevere il denaro vinto.
+                </p>
+            </section>
+
+            <section class="grid-container">
+                <section class="content facts">
+                    <ul class="facts__list">
+                        <li class="facts__item">
+                            <span>Online slots</span>
+                            <span>2000+</span>
+                        </li>
+                        <li class="facts__item">
+                            <span>Biggest casino bonus</span>
+                            <span>CA$1,600 +150 Bonus Spins</span>
+                        </li>
+                        <li class="facts__item">
+                            <span>Min. deposit</span>
+                            <span>CA$1 - CA$20</span>
+                        </li>
+                        <li class="facts__item">
+                            <span>Gambling licenses</span>
+                            <span>MGA, GRA, iGO</span>
+                        </li>
+                        <li class="facts__item">
+                            <span>Legal gambling age</span>
+                            <span>18+</span>
+                        </li>
+                        <li class="facts__item">
+                            <span>ORetail casinos</span>
+                            <span>No</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="content benefits">
+                    <div class="background benefits__background">
+                        <img src="./images/facts-bg.png" alt="" title="">
+                    </div>
+
+                    <div class="benefits__wrap">
+                        <ul class="benefits__list">
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>Huge variety of Sports to Bet On</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>Wide amount of Deposit Methods</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>1000+ Casino Games from Best Providers</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>Generous Winnings and Jackpots</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>Mobile Apps for iOS and Android</p>
+                            </li>
+                            <li class="benefits__item">
+                                <img src="./images/star-icon.png" alt="" title="">
+                                <p>Largest selection of Live Betting Games</p>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="content welcome">
+                    <div class="background welcome__background">
+                        <img src="./images/welcome-bg.png" alt="" title="">
+                    </div>
+
+                    <div class="image welcome__image">
+                        <img src="./images/welcome/welcome-coins.png" alt="" title="">
+                        <img src="./images/welcome/welcome-airplane.png" alt="" title="">
+                        <img src="./images/welcome/welcome-man.png" alt="" title="">
+                        <img src="./images/welcome/welcome-coin-bottom.png" alt="" title="">
+                        <img src="./images/welcome/welcome-rocket.png" alt="" title="">
+                    </div>
+
+                    <div class="welcome__wrap">
+                        <h2 class="title welcome__bonus-title">100% Bonus up to 300€</h2>
+                        <p class="title welcome__bonus">+100 free spins on your first deposit</p>
+                        <a href="#" class="button button-bonus welcome__button">Obter um Bônus</a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="content welcome__content">
+                <h2 class="title welcome__title">20Bet Brasil: Casa de Aposta e Cassino</h2>
+
+                <div class="image">
+                    <img src="./images/welcome-bg-photo.png" alt="" title="">
+                </div>
+
+                <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri, trasformando il
+                    vostro hobby
+                    preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e sportsbook,
+                    consentendo a
+                    chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.</p>
+
+                <h2 class="subtitle welcome__subtitle">A 20Bet é legalizada no Brasil?</h2>
+                <p>Si possono effettuare scommesse in pochi clic e bastano appena 24 ore per ricevere il denaro vinto.
+                </p>
+            </section>
+
+            <section class="content welcome__content">
+                <h2 class="title welcome__title">20Bet Brasil: Casa de Aposta e Cassino</h2>
+                <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri, trasformando il
+                    vostro hobby
+                    preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e sportsbook,
+                    consentendo a
+                    chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.</p>
+
+                <ul>
+                    <li>text</li>
+                    <li>text</li>
+                    <li>text</li>
+                </ul>
+
+                <h2 class="subtitle welcome__subtitle">A 20Bet é legalizada no Brasil?</h2>
+                <p>Si possono effettuare scommesse in pochi clic e bastano appena 24 ore per ricevere il denaro vinto.
+                </p>
+
+                <a href="#" class="button button-bonus welcome__button">Obter um Bônus</a>
+            </section>
+
+            <section class="content welcome__content">
+                <h2 class="title welcome__title">20Bet Brasil: Casa de Aposta e Cassino</h2>
+                <img src="./images/welcome/welcome-content-image.png" alt="" title="">
+                <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri, trasformando il
+                    vostro hobby
+                    preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e sportsbook,
+                    consentendo a
+                    chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.</p>
+
+                <h2 class="subtitle welcome__subtitle">A 20Bet é legalizada no Brasil?</h2>
+                <p>Si possono effettuare scommesse in pochi clic e bastano appena 24 ore per ricevere il denaro vinto.
+                </p>
+            </section>
+
+            <section class="content welcome__content">
+                <h2 class="title welcome__title">20Bet Brasil: Casa de Aposta e Cassino</h2>
+                <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri, trasformando il
+                    vostro hobby
+                    preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e sportsbook,
+                    consentendo a
+                    chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.</p>
+
+                <h2 class="subtitle welcome__subtitle">A 20Bet é legalizada no Brasil?</h2>
+                <p>Si possono effettuare scommesse in pochi clic e bastano appena 24 ore per ricevere il denaro vinto.
+                </p>
+            </section>
+
+            <section class="content rating__content">
+                <h2 class="title rating__title">Ratings Tonybet</h2>
+
+                <ul class="rating__list" itemscope itemtype="https://schema.org/Game">
+                    <meta itemprop="name" content="https://yourwebsitename.com/">
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Sports Betting</span>
+                            <span><span itemprop="ratingValue">9</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Weekly Promotions</span>
+                            <span><span itemprop="ratingValue">10</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Casino Games</span>
+                            <span><span itemprop="ratingValue">4</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Customer Support</span>
+                            <span><span itemprop="ratingValue">8</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Welcome Bonus</span>
+                            <span><span itemprop="ratingValue">7</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                    <li class="rating__item">
+                        <div class="rating__image">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                            <img src="./images/medal-icon.png" alt="" title="">
+                        </div>
+                        <div class="rating__text" itemprop="aggregateRating" itemscope
+                            itemtype="https://schema.org/AggregateRating">
+                            <span class="rating__game">Banking Options</span>
+                            <span><span itemprop="ratingValue">9</span>/<span itemprop="bestRating">10</span></span>
+                            <meta itemprop="reviewCount" content="10">
+                        </div>
+                    </li>
+                </ul>
+
+                <a href="#" class="button button-bonus rating__button">Obter um Bônus</a>
+            </section>
+
+            <section class="content faq__content">
+                <h2 class="title faq__title">FAQ</h2>
+
+                <ul class="faq__list" itemscope itemtype="https://schema.org/FAQPage">
+                    <li class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 class="subtitle faq-item__title js-button-accordion" itemprop="name">A 20Bet é legalizada no
+                            Brasil?
+                        </h3>
+                        <div class="faq-item__desc" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sim, a casa de apostas tem licença emitida por Curaçao, que é reconhecida
+                                no Brasil e a permite atuar por aqui.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 class="subtitle faq-item__title js-button-accordion" itemprop="name">Existe aplicativo da
+                            20Bet?</h3>
+                        <div class="faq-item__desc" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sim, a casa de apostas tem licença emitida por Curaçao, que é reconhecida
+                                no Brasil e a permite atuar por aqui.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="faq__item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <h3 class="subtitle faq-item__title js-button-accordion" itemprop="name">Tem bônus de
+                            boas-vindas na
+                            20Bet?</h3>
+                        <div class="faq-item__desc" itemscope itemprop="acceptedAnswer"
+                            itemtype="https://schema.org/Answer">
+                            <p itemprop="text">O pacote especial para novos usuários da 20Bet paga 100% sobre o primeiro
+                                depósito, com limite de 600 BRL.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+
+        <aside class="aside aside__right-block">
+            <div class="aside__menu">
+                <ul>
+                    <li><a class="aside__title" href="#"><span>My Bets</span></a></li>
+                    <li><a class="aside__title" href="#"><span>Please Log in!</span></a></li>
+                </ul>
+            </div>
+
+            <div class="aside__mobile-app">
+                <div class="aside__title-wrap">
+                    <img src="./images/aside/aside-apple-icon.png" alt="" title="">
+                    <h3 class="aside__title">22bet mobile apps</h3>
+                    <img src="./images/aside/aside-android-icon.png" alt="" title="">
+                </div>
+
+                <div class="aside__mobile-bg">
+                    <h3 class="aside__mobile-title">A whole world <br> of betting in your pocket</h3>
+                    <img src="./images/aside/iPhone13-image.png" alt="" title="">
+                </div>
+
+                <a href="./mobile.html" class="button button-bonus aside__button-bonus">ganhar bonus</a>
+            </div>
+
+            <div class="aside__games">
+                <ul class="aside__game-list">
+                    <li class="aside__game-item">
+                        <a href="#" class="aside__game-link">
+                            <img src="./images/aside/roulette.png" alt="" title="">
+                            <div class="aside__game-title">
+                                <img src="./images/aside/roulette-icon.png" alt="" title="">
+                                <p class="aside__game-name" href="#">Roulette</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="aside__game-item">
+                        <a href="#" class="aside__game-link">
+                            <img src="./images/aside/blackjack.png" alt="" title="">
+                            <div class="aside__game-title">
+                                <img src="./images/aside/blackjack-icon.png" alt="" title="">
+                                <p class="aside__game-name" href="#">Blackjack</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="aside__game-item">
+                        <a href="#" class="aside__game-link">
+                            <img src="./images/aside/slots.png" alt="" title="">
+                            <div class="aside__game-title">
+                                <img src="./images/aside/slots-icon.png" alt="" title="">
+                                <p class="aside__game-name" href="#">Slots</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+    </main>
+
+    <footer class="content footer">
+        <div class="content footer__content">
+            <nav class="footer__menu">
+                <ul>
+                    <li class="footer__nav-item">
+                        <span>Information</span>
+                        <ul>
+                            <li><a href="#">22Bet</a></li>
+                            <li><a href="#">Bonuses</a></li>
+                            <li><a href="#">App</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__nav-item">
+                        <span>Useful Links</span>
+                        <ul>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+                    </li>
+                    <li class="footer__nav-item">
+                        <span>Contacts</span>
+                        <ul>
+                            <li><a href="mailto:support-en@22bet.com">support-en@22bet.com</a></li>
+                            <li><a href="mailto:security@22bet.com">security@22bet.com</a></li>
+                            <li><a href="mailto:complaints@22bet.com">complaints@22bet.com</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <ul class="footer__payment">
+                <li>
+                    <img src="./images/master-card.png" alt="" title="">
+                </li>
+                <li>
+                    <img src="./images/visa.png" alt="" title="">
+                </li>
+                <li>
+                    <img src="./images/diners-club.png" alt="" title="">
+                </li>
+                <li>
+                    <img src="./images/discover.png" alt="" title="">
+                </li>
+            </ul>
+
+            <div class="footer__desc">
+                <div class="footer__info">
+                    <p>Formidabile sito di scommesse online, con 22Bet potrete realizzare i vostri desideri,
+                        trasformando il
+                        vostro hobby
+                        preferito in una fonte di guadagno. Questo allibratore è esperto di servizi di casinò e
+                        sportsbook,
+                        consentendo a
+                        chiunque lo utilizzi di scegliere l’esperienza di gioco che più li gratifichi.
+                        18+</p>
+                    <img src="./images/adult-image.png" alt="" title="">
+                </div>
+                <p class="footer__copyright">2023 © 22bet.com. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="mobile-auth">
+        <ul>
+            <li>
+                <a href="#" class="button button-register mobile-auth__button-register">registration</a>
+            </li>
+            <li>
+                <a href="#" class="button button-login mobile-auth__button-login">log in</a>
+            </li>
+        </ul>
+    </div>
+
+    <button class="button-up">
+        <img src="./images/button-up.png" alt="" title="">
+    </button>
+</body>
+
+</html>
